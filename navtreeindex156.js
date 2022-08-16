@@ -1,6 +1,5 @@
 var NAVTREEINDEX156 =
 {
-"structveh__collision.html#a92882f241ec360b0c1717643e4b8b5b4":[36,0,932,1],
 "structveh__collision.html#ab6374279b6a8e159072e1b543c8d9b6f":[36,0,932,4],
 "structveh__collision.html#abb1926e23af78f44bb793aad64b9fea0":[36,0,932,2],
 "structveh__collision.html#abba05cd17e45044d062877ea93487413":[36,0,932,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX156 =
 "structweather__type.html#a417de895446fdee540d2a39484d7563c":[36,0,980,15],
 "structweather__type.html#a45c3434d18578e7839383583de59cdcd":[36,0,980,13],
 "structweather__type.html#a4c0bd1861eb62532f2371c2868da7970":[36,0,980,1],
-"structweather__type.html#a54fbec40e14fd7f773d51fba58aa5c23":[36,0,980,9]
+"structweather__type.html#a54fbec40e14fd7f773d51fba58aa5c23":[36,0,980,9],
+"structweather__type.html#a61499fdc29ba6cd5b99ebf0254945c81":[36,0,980,14]
 };

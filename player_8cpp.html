@@ -188,9 +188,9 @@ Functions</h2></td></tr>
 <tr class="separator:a2374e8b755cc07d0e74df88271258bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e1940dc5802dfb2387644ce4ce4b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnc__color.html">nc_color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8cpp.html#a29e1940dc5802dfb2387644ce4ce4b10">encumb_color</a> (int level)</td></tr>
 <tr class="separator:a29e1940dc5802dfb2387644ce4ce4b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fe4e25d4d32b168cdc76f313b4262c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8cpp.html#a7fe4e25d4d32b168cdc76f313b4262c0">calc_fatigue_cap</a> (const <a class="el" href="classplayer.html">player</a> &amp;p)</td></tr>
-<tr class="memdesc:a7fe4e25d4d32b168cdc76f313b4262c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the player's morale cap due to fatigue.  <a href="player_8cpp.html#a7fe4e25d4d32b168cdc76f313b4262c0">More...</a><br /></td></tr>
-<tr class="separator:a7fe4e25d4d32b168cdc76f313b4262c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc359335b7a969d211414b6a954056e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="player_8cpp.html#acc359335b7a969d211414b6a954056e5">calc_fatigue_cap</a> (int fatigue)</td></tr>
+<tr class="memdesc:acc359335b7a969d211414b6a954056e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the player's morale cap due to fatigue.  <a href="player_8cpp.html#acc359335b7a969d211414b6a954056e5">More...</a><br /></td></tr>
+<tr class="separator:acc359335b7a969d211414b6a954056e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -446,8 +446,8 @@ Variables</h2></td></tr>
 <tr class="separator:af37ad6159a3886605be1a6f1116d3f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7fe4e25d4d32b168cdc76f313b4262c0" name="a7fe4e25d4d32b168cdc76f313b4262c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fe4e25d4d32b168cdc76f313b4262c0">&#9670;&nbsp;</a></span>calc_fatigue_cap()</h2>
+<a id="acc359335b7a969d211414b6a954056e5" name="acc359335b7a969d211414b6a954056e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc359335b7a969d211414b6a954056e5">&#9670;&nbsp;</a></span>calc_fatigue_cap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,8 +455,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int calc_fatigue_cap </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classplayer.html">player</a> &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fatigue</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -466,13 +466,13 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="player_8cpp_source.html#l04410">4410</a> of file <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
 <div class="fragment"><div class="line"><a id="l04411" name="l04411"></a><span class="lineno"> 4411</span>{</div>
-<div class="line"><a id="l04412" name="l04412"></a><span class="lineno"> 4412</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">fatigue_levels::massive</a> ) {</div>
+<div class="line"><a id="l04412" name="l04412"></a><span class="lineno"> 4412</span>    <span class="keywordflow">if</span>( fatigue &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">fatigue_levels::massive</a> ) {</div>
 <div class="line"><a id="l04413" name="l04413"></a><span class="lineno"> 4413</span>        <span class="keywordflow">return</span> 20;</div>
-<div class="line"><a id="l04414" name="l04414"></a><span class="lineno"> 4414</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">fatigue_levels::exhausted</a> ) {</div>
+<div class="line"><a id="l04414" name="l04414"></a><span class="lineno"> 4414</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( fatigue &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">fatigue_levels::exhausted</a> ) {</div>
 <div class="line"><a id="l04415" name="l04415"></a><span class="lineno"> 4415</span>        <span class="keywordflow">return</span> 40;</div>
-<div class="line"><a id="l04416" name="l04416"></a><span class="lineno"> 4416</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">fatigue_levels::dead_tired</a> ) {</div>
+<div class="line"><a id="l04416" name="l04416"></a><span class="lineno"> 4416</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( fatigue &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">fatigue_levels::dead_tired</a> ) {</div>
 <div class="line"><a id="l04417" name="l04417"></a><span class="lineno"> 4417</span>        <span class="keywordflow">return</span> 60;</div>
-<div class="line"><a id="l04418" name="l04418"></a><span class="lineno"> 4418</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">get_fatigue</a>() &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46">fatigue_levels::tired</a> ) {</div>
+<div class="line"><a id="l04418" name="l04418"></a><span class="lineno"> 4418</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( fatigue &gt;= <a class="code hl_enumvalue" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46">fatigue_levels::tired</a> ) {</div>
 <div class="line"><a id="l04419" name="l04419"></a><span class="lineno"> 4419</span>        <span class="keywordflow">return</span> 80;</div>
 <div class="line"><a id="l04420" name="l04420"></a><span class="lineno"> 4420</span>    }</div>
 <div class="line"><a id="l04421" name="l04421"></a><span class="lineno"> 4421</span>    <span class="keywordflow">return</span> 0;</div>
@@ -481,9 +481,8 @@ Variables</h2></td></tr>
 <div class="ttc" id="acharacter_8h_html_abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc"><div class="ttname"><a href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">fatigue_levels::massive</a></div><div class="ttdeci">@ massive</div></div>
 <div class="ttc" id="acharacter_8h_html_abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477"><div class="ttname"><a href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">fatigue_levels::exhausted</a></div><div class="ttdeci">@ exhausted</div></div>
 <div class="ttc" id="acharacter_8h_html_abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d"><div class="ttname"><a href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">fatigue_levels::dead_tired</a></div><div class="ttdeci">@ dead_tired</div></div>
-<div class="ttc" id="aclassCharacter_html_a31c20b0d370fef88fefe520ff046daf5"><div class="ttname"><a href="classCharacter.html#a31c20b0d370fef88fefe520ff046daf5">Character::get_fatigue</a></div><div class="ttdeci">int get_fatigue() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l04448">character.cpp:4448</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">dead_tired</a>, <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">exhausted</a>, <a class="el" href="character_8cpp_source.html#l04448">Character::get_fatigue()</a>, <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">massive</a>, and <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46">tired</a>.</p>
+<p class="reference">References <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137afc375b3ddd5525adbdf783e5ade0473d">dead_tired</a>, <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137ae349d735a5fa5b10d9770031e669c477">exhausted</a>, <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc">massive</a>, and <a class="el" href="character_8h.html#abf088072c9ca5b676f7f7545bac9a137a287f44f35ecb230e8b997abaad077f46">tired</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04424">player::calc_focus_equilibrium()</a>, and <a class="el" href="avatar_8cpp_source.html#l00985">avatar::disp_morale()</a>.</p>
 
@@ -633,10 +632,10 @@ Variables</h2></td></tr>
 <div class="line"><a id="l03432" name="l03432"></a><span class="lineno"> 3432</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l03433" name="l03433"></a><span class="lineno"> 3433</span>}</div>
 <div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00175">item.h:176</a></div></div>
-<div class="ttc" id="aclassitem_html_acd78321ba4d5c09d39f1d58d20b68484"><div class="ttname"><a href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">item::gunmods</a></div><div class="ttdeci">std::vector&lt; item * &gt; gunmods()</div><div class="ttdoc">Returns all gunmods currently attached to this item (always empty if item not a gun)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07578">item.cpp:7578</a></div></div>
+<div class="ttc" id="aclassitem_html_acd78321ba4d5c09d39f1d58d20b68484"><div class="ttname"><a href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">item::gunmods</a></div><div class="ttdeci">std::vector&lt; item * &gt; gunmods()</div><div class="ttdoc">Returns all gunmods currently attached to this item (always empty if item not a gun)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07567">item.cpp:7567</a></div></div>
 <div class="ttc" id="anamespaceenchant__vals_html_acd6a6ebb27f9ecb82b3bce1d3aef2998"><div class="ttname"><a href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">enchant_vals::mod</a></div><div class="ttdeci">mod</div><div class="ttdef"><b>Definition:</b> <a href="magic__enchantment_8h_source.html#l00026">magic_enchantment.h:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8cpp_source.html#l07578">item::gunmods()</a>.</p>
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l07567">item::gunmods()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l03435">player::gunmod_remove()</a>.</p>
 
@@ -705,10 +704,10 @@ Variables</h2></td></tr>
 <div class="line"><a id="l02011" name="l02011"></a><span class="lineno"> 2011</span>    }</div>
 <div class="line"><a id="l02012" name="l02012"></a><span class="lineno"> 2012</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span>}</div>
-<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00707">character.cpp:707</a></div></div>
+<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00709">character.cpp:709</a></div></div>
 <div class="ttc" id="aclassCreature_html_a2acb6e1e19bcb775748403d07d8dc3f0"><div class="ttname"><a href="classCreature.html#a2acb6e1e19bcb775748403d07d8dc3f0">Creature::get_value</a></div><div class="ttdeci">std::string get_value(const std::string &amp;key) const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01338">creature.cpp:1338</a></div></div>
-<div class="ttc" id="aclassitem_html_a0b35b9066ad71987b77727af45d96059"><div class="ttname"><a href="classitem.html#a0b35b9066ad71987b77727af45d96059">item::is_owned_by</a></div><div class="ttdeci">bool is_owned_by(const Character &amp;c, bool available_to_take=false) const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l01239">item.cpp:1239</a></div></div>
-<div class="ttc" id="aclassitem_html_a326dae8709070c316f6859ef0704bf85"><div class="ttname"><a href="classitem.html#a326dae8709070c316f6859ef0704bf85">item::get_owner</a></div><div class="ttdeci">faction_id get_owner() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l01284">item.cpp:1284</a></div></div>
+<div class="ttc" id="aclassitem_html_a0b35b9066ad71987b77727af45d96059"><div class="ttname"><a href="classitem.html#a0b35b9066ad71987b77727af45d96059">item::is_owned_by</a></div><div class="ttdeci">bool is_owned_by(const Character &amp;c, bool available_to_take=false) const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l01238">item.cpp:1238</a></div></div>
+<div class="ttc" id="aclassitem_html_a326dae8709070c316f6859ef0704bf85"><div class="ttname"><a href="classitem.html#a326dae8709070c316f6859ef0704bf85">item::get_owner</a></div><div class="ttdeci">faction_id get_owner() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l01283">item.cpp:1283</a></div></div>
 <div class="ttc" id="aclassnpc_html"><div class="ttname"><a href="classnpc.html">npc</a></div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00780">npc.h:781</a></div></div>
 <div class="ttc" id="aclassplayer_html_ae1827f3e149c8cbbfdf6ba1803cbf80d"><div class="ttname"><a href="classplayer.html#ae1827f3e149c8cbbfdf6ba1803cbf80d">player::add_faction_warning</a></div><div class="ttdeci">bool add_faction_warning(const faction_id &amp;id)</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l02107">player.cpp:2107</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a47953b33a873caa0861b12222842a5ec"><div class="ttname"><a href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a></div><div class="ttdeci">int rl_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00519">coordinates.h:519</a></div></div>
@@ -716,7 +715,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="agame__constants_8h_html_a745392436b19cce3012d4d8dc0fe422c"><div class="ttname"><a href="game__constants_8h.html#a745392436b19cce3012d4d8dc0fe422c">MAX_VIEW_DISTANCE</a></div><div class="ttdeci">static constexpr int MAX_VIEW_DISTANCE</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00045">game_constants.h:45</a></div></div>
 <div class="ttc" id="anamespacepickup_html_abd31c624477e99fff1c2dee074c44531"><div class="ttname"><a href="namespacepickup.html#abd31c624477e99fff1c2dee074c44531">pickup::query_thief</a></div><div class="ttdeci">bool query_thief()</div><div class="ttdef"><b>Definition:</b> <a href="pickup_8cpp_source.html#l00186">pickup.cpp:186</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="player_8cpp_source.html#l02107">player::add_faction_warning()</a>, <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="item_8cpp_source.html#l01284">item::get_owner()</a>, <a class="el" href="creature_8cpp_source.html#l01338">Creature::get_value()</a>, <a class="el" href="item_8cpp_source.html#l01239">item::is_owned_by()</a>, <a class="el" href="game__constants_8h_source.html#l00045">MAX_VIEW_DISTANCE</a>, <a class="el" href="character_8cpp_source.html#l00707">Character::pos()</a>, <a class="el" href="pickup_8cpp_source.html#l00186">pickup::query_thief()</a>, and <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>.</p>
+<p class="reference">References <a class="el" href="player_8cpp_source.html#l02107">player::add_faction_warning()</a>, <a class="el" href="game_8cpp_source.html#l00267">g</a>, <a class="el" href="item_8cpp_source.html#l01283">item::get_owner()</a>, <a class="el" href="creature_8cpp_source.html#l01338">Creature::get_value()</a>, <a class="el" href="item_8cpp_source.html#l01238">item::is_owned_by()</a>, <a class="el" href="game__constants_8h_source.html#l00045">MAX_VIEW_DISTANCE</a>, <a class="el" href="character_8cpp_source.html#l00709">Character::pos()</a>, <a class="el" href="pickup_8cpp_source.html#l00186">pickup::query_thief()</a>, and <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l02015">player::consume_item()</a>.</p>
 
@@ -1187,7 +1186,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1327,7 +1326,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1355,7 +1354,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1551,7 +1550,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1579,7 +1578,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1635,7 +1634,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1663,7 +1662,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1691,7 +1690,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -1775,7 +1774,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -2249,7 +2248,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -2277,7 +2276,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -2389,7 +2388,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -2417,7 +2416,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -2501,7 +2500,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>, and <a class="el" href="player_8cpp_source.html#l01711">player::update_body_wetness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>, and <a class="el" href="player_8cpp_source.html#l01711">player::update_body_wetness()</a>.</p>
 
 </div>
 </div>
@@ -2585,7 +2584,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -2921,7 +2920,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -2949,7 +2948,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -3817,7 +3816,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -3901,7 +3900,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -4181,7 +4180,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -4209,7 +4208,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -4237,7 +4236,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04522">player::reset_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="player_8cpp_source.html#l04523">player::reset_stats()</a>.</p>
 
 </div>
 </div>
@@ -4247,7 +4246,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="player_8cpp.html">player.cpp</a></li>
-    <li class="footer">Generated on Thu Jul 28 2022 19:38:52 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 15:29:09 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
