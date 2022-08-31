@@ -51,6 +51,17 @@ var namespaces_dup =
     [ "anonymous_namespace{bodypart.cpp}", "namespaceanonymous__namespace_02bodypart_8cpp_03.html", [
       [ "body_part_factory", "namespaceanonymous__namespace_02bodypart_8cpp_03.html#aaae7b9ce256ab1fee1bd36587d67cf19", null ]
     ] ],
+    [ "anonymous_namespace{character_display.cpp}", "namespaceanonymous__namespace_02character__display_8cpp_03.html", [
+      [ "player_display_tab", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09", [
+        [ "stats", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09a446501053769c06c565094b26d26e8ef", null ],
+        [ "encumbrance", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09ac6cfd4983be847b61861fd0a9c7cabbe", null ],
+        [ "skills", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09aa658279f9b983958149f31e4d8487673", null ],
+        [ "traits", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09ab4a7cb107b59ab9d38b92d8f65efc29a", null ],
+        [ "bionics", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09af8eb4254a5c40ba0293fd18353b05a33", null ],
+        [ "effects", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09a2bb387c51f0ebdab53cc485d53694d37", null ],
+        [ "num_tabs", "namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09aa7f1baf43a1881420acf12347b52522b", null ]
+      ] ]
+    ] ],
     [ "anonymous_namespace{clothing_mod.cpp}", "namespaceanonymous__namespace_02clothing__mod_8cpp_03.html", [
       [ "all_clothing_mods", "namespaceanonymous__namespace_02clothing__mod_8cpp_03.html#a5f31d58dfc5fbaa8a5da0103182a3e81", null ]
     ] ],
@@ -162,20 +173,9 @@ var namespaces_dup =
     [ "anonymous_namespace{overmap_location.cpp}", "namespaceanonymous__namespace_02overmap__location_8cpp_03.html", [
       [ "locations", "namespaceanonymous__namespace_02overmap__location_8cpp_03.html#a1746287579ae93eaa7db10693e28de66", null ]
     ] ],
-    [ "anonymous_namespace{player_display.cpp}", "namespaceanonymous__namespace_02player__display_8cpp_03.html", [
-      [ "player_display_tab", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1", [
-        [ "stats", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1a446501053769c06c565094b26d26e8ef", null ],
-        [ "encumbrance", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1ac6cfd4983be847b61861fd0a9c7cabbe", null ],
-        [ "skills", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1aa658279f9b983958149f31e4d8487673", null ],
-        [ "traits", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1ab4a7cb107b59ab9d38b92d8f65efc29a", null ],
-        [ "bionics", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1af8eb4254a5c40ba0293fd18353b05a33", null ],
-        [ "effects", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1a2bb387c51f0ebdab53cc485d53694d37", null ],
-        [ "num_tabs", "namespaceanonymous__namespace_02player__display_8cpp_03.html#a2f6040cde5f366f2f92e1fd995b289c1aa7f1baf43a1881420acf12347b52522b", null ]
-      ] ]
-    ] ],
     [ "anonymous_namespace{profession.cpp}", "namespaceanonymous__namespace_02profession_8cpp_03.html", [
       [ "all_profs", "namespaceanonymous__namespace_02profession_8cpp_03.html#a7488aa64b6b073c21ae0bf4af01102aa", null ],
-      [ "generic_profession_id", "namespaceanonymous__namespace_02profession_8cpp_03.html#a9ffc5f7c33cad2678fb4b714948d785b", null ]
+      [ "generic_profession_id", "namespaceanonymous__namespace_02profession_8cpp_03.html#a040d4c732bcc22b97ae7a97ea3e73822", null ]
     ] ],
     [ "anonymous_namespace{recipe_dictionary.cpp}", "namespaceanonymous__namespace_02recipe__dictionary_8cpp_03.html", [
       [ "delete_if", "namespaceanonymous__namespace_02recipe__dictionary_8cpp_03.html#a682c179b89f27c7092e1e4907c407a2c", null ]
@@ -282,6 +282,28 @@ var namespaces_dup =
       [ "draw_age", "namespacechar__creation.html#a002fb4c447a357ba79c83fcdc8434299", null ],
       [ "draw_height", "namespacechar__creation.html#af1e90b6a20df45145253a6ccf3ab27e3", null ]
     ] ],
+    [ "character_display", "namespacecharacter__display.html", [
+      [ "disp_info", "namespacecharacter__display.html#a6f5ceda7117fa3218978f97f5b055ae5", null ],
+      [ "print_encumbrance", "namespacecharacter__display.html#ace984c0b6c76cdc6bcee76a8a2207457", null ],
+      [ "upgrade_stat_prompt", "namespacecharacter__display.html#a006a82c12d14823acc830f2c8c664040", null ]
+    ] ],
+    [ "character_effects", "namespacecharacter__effects.html", [
+      [ "get_kcal_speed_penalty", "namespacecharacter__effects.html#a6d9d51c28a272ae26ed493d1471cf072", null ],
+      [ "get_pain_penalty", "namespacecharacter__effects.html#a8f18c1c2508870515d5c36a3ea255498", null ],
+      [ "get_thirst_speed_penalty", "namespacecharacter__effects.html#a69e2f87b5391a5aec01672c98cdfb57c", null ]
+    ] ],
+    [ "character_funcs", "namespacecharacter__funcs.html", [
+      [ "can_see_fine_details", "namespacecharacter__funcs.html#a813a9decd34980fe53f38ba18ffd6374", null ],
+      [ "can_see_fine_details", "namespacecharacter__funcs.html#a68c0c236c653e5217f1436bfadd54664", null ],
+      [ "estimate_effect_dur", "namespacecharacter__funcs.html#a470b862a6936cbfbd1e80a46b78f1914", null ],
+      [ "fine_detail_vision_mod", "namespacecharacter__funcs.html#adda4d5fd10b7216c49a0f9b6010de579", null ],
+      [ "fine_detail_vision_mod", "namespacecharacter__funcs.html#a03ea116da570af10c630e0fe3a7ea6fc", null ],
+      [ "get_book_fun_for", "namespacecharacter__funcs.html#aaa9f2cc376f03128e0a486a90c7376fa", null ],
+      [ "is_fun_to_read", "namespacecharacter__funcs.html#a862df11441bba358b82fa47ce88ebe85", null ],
+      [ "siphon", "namespacecharacter__funcs.html#adaa760a90e1a9cc452c7b756bcde2a60", null ],
+      [ "FINE_VISION_PERFECT", "namespacecharacter__funcs.html#a4e103652bd1f087acad98fa135eca4a4", null ],
+      [ "FINE_VISION_THRESHOLD", "namespacecharacter__funcs.html#ac767ac632c0c783c8615f5e920cc938e", null ]
+    ] ],
     [ "character_weight_category", "namespacecharacter__weight__category.html", [
       [ "emaciated", "namespacecharacter__weight__category.html#ae41f48d3a0de12bbab86abc5d741f978", null ],
       [ "morbidly_obese", "namespacecharacter__weight__category.html#a8be790615c5a48bdf4fb02fd551f8a17", null ],
@@ -364,6 +386,11 @@ var namespaces_dup =
     [ "distribution_graph", "namespacedistribution__graph.html", "namespacedistribution__graph" ],
     [ "doors", "namespacedoors.html", [
       [ "close_door", "namespacedoors.html#acc8efe27aeed04f754930b76a29d0c2a", null ]
+    ] ],
+    [ "dreams", "namespacedreams.html", [
+      [ "clear", "namespacedreams.html#a37ba15d5174aeee54ac7ac817dac9ff2", null ],
+      [ "get_random_for_category", "namespacedreams.html#aaf6b15bffecda9689112768164805a72", null ],
+      [ "load", "namespacedreams.html#ac03a7d4bbf2da27c34ded79ba75fcfce", null ]
     ] ],
     [ "drop_token", "namespacedrop__token.html", [
       [ "get_provider", "namespacedrop__token.html#a26140f7217ba2ef2a2549d7a5415f727", null ]
@@ -678,7 +705,6 @@ var namespaces_dup =
       [ "fish_trap", "namespaceiuse.html#aee840b3e8d9e57e43bf850bb4fe1f32f", null ],
       [ "fishing_rod", "namespaceiuse.html#a5cbe783493c4bbb59042ea505639c06d", null ],
       [ "fitness_check", "namespaceiuse.html#ac24c85992b2571424e8eb4c70b579563", null ],
-      [ "flu_vaccine", "namespaceiuse.html#af015e96f2a09b910339eb5ddc09fd64a", null ],
       [ "flumed", "namespaceiuse.html#aa748624edacd9038fb86f038e61bb68a", null ],
       [ "flusleep", "namespaceiuse.html#adbe3744c239129f7b6cdd7b9fdcddb53", null ],
       [ "foodperson", "namespaceiuse.html#ae1a9869a841219f81c39c873d5c08e59", null ],
@@ -816,6 +842,9 @@ var namespaces_dup =
       [ "handle_liquid_from_container", "namespaceliquid__handler.html#a9df963755dc50d58f0c5fcbd704791c4", null ],
       [ "handle_liquid_from_ground", "namespaceliquid__handler.html#ae4b5ac39dbc51d5559ba9d6f901395f0", null ],
       [ "perform_liquid_transfer", "namespaceliquid__handler.html#a8c1765bcc2eb292f1a8cc24f0ca2b8b9", null ]
+    ] ],
+    [ "map_funcs", "namespacemap__funcs.html", [
+      [ "climbing_cost", "namespacemap__funcs.html#a3d04b9be6f6d41f70f82070ae568e7b2", null ]
     ] ],
     [ "MAP_SHARING", "namespaceMAP__SHARING.html", [
       [ "addAdmin", "namespaceMAP__SHARING.html#a77a25d8b951390c8f157e594e1e2993c", null ],
@@ -1148,6 +1177,16 @@ var namespaces_dup =
       [ "names", "namespaceName.html#a305934c1ed39204d620efdee7dbec154", null ],
       [ "usage_flags", "namespaceName.html#a20d83b639a7fa02d3690c4dd3af1fcfd", null ]
     ] ],
+    [ "newcharacter", "namespacenewcharacter.html", [
+      [ "add_traits", "namespacenewcharacter.html#a7bc90a9564c58aaca110dc192c29054a", null ],
+      [ "add_traits", "namespacenewcharacter.html#a101668ddffbc9c60d690f4b9b1ed3e94", null ],
+      [ "has_conflicting_trait", "namespacenewcharacter.html#a810a2d39283752da4d95027d34a4cd2b", null ],
+      [ "has_higher_trait", "namespacenewcharacter.html#a1920445a59667cfb10d9d38d2dcb0e16", null ],
+      [ "has_lower_trait", "namespacenewcharacter.html#accf415a065ef7ba53e81374dce115e0d", null ],
+      [ "has_same_type_trait", "namespacenewcharacter.html#afb61e70aaafdc82eaa9f84a4afda5609", null ],
+      [ "random_bad_trait", "namespacenewcharacter.html#a0b0639d19bcb26127689efdad21c6835", null ],
+      [ "random_good_trait", "namespacenewcharacter.html#af26bc6eecdfca795bacbc3ac398f4578", null ]
+    ] ],
     [ "npc_factions", "namespacenpc__factions.html", [
       [ "relationship", "namespacenpc__factions.html#af09ec48d0dc133795062d1424c486686", [
         [ "kill_on_sight", "namespacenpc__factions.html#af09ec48d0dc133795062d1424c486686ae2297e55866b5d8e47bfee136604c485", null ],
@@ -1211,8 +1250,8 @@ var namespaces_dup =
     [ "overmap_connections", "namespaceovermap__connections.html", [
       [ "check_consistency", "namespaceovermap__connections.html#ab36252a44fc0ccdaee6640bfa11c1be5", null ],
       [ "finalize", "namespaceovermap__connections.html#a42c4f1f50efcfaca2bf3e432c16476a6", null ],
-      [ "guess_for", "namespaceovermap__connections.html#a08ab011bb828d660cabc5c89cbe1b0f4", null ],
-      [ "guess_for", "namespaceovermap__connections.html#af90b58fed265f687f61ea7ebddd57ae1", null ],
+      [ "guess_for", "namespaceovermap__connections.html#aca176db1a81fd417c1eed140b74ae602", null ],
+      [ "guess_for", "namespaceovermap__connections.html#a1b075a87209845b9905895a3a9697e52", null ],
       [ "load", "namespaceovermap__connections.html#ae63dd560ad9fcf9bf40d2023642fb114", null ],
       [ "reset", "namespaceovermap__connections.html#aedeb81c9b5cc4ed3aa0345d2b4b7a5ab", null ]
     ] ],
@@ -1323,6 +1362,7 @@ var namespaces_dup =
       [ "get_str_draw_penalty", "namespaceranged.html#a4c8c85e0249f67213d9994612315aa3e", null ],
       [ "gunmode_checks_common", "namespaceranged.html#aed4420a1fd77e160a72de2a528e56da5", null ],
       [ "gunmode_checks_weapon", "namespaceranged.html#a743f9e35b20c136e56ca9e9480fb27bc", null ],
+      [ "handle_gun_damage", "namespaceranged.html#abf8b46e1f1dae2e7a3d4ff75b9495026", null ],
       [ "hit_chance", "namespaceranged.html#ad0ad7f6e4c593e68012655f0befed8cf", null ],
       [ "hit_with_aoe", "namespaceranged.html#a51e6279a2008714e5596da4f5fa1b00e", null ],
       [ "print_dmg_msg", "namespaceranged.html#af042bc3e3b1ea1c57a42ee323ad284a8", null ],
