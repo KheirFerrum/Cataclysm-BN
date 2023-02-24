@@ -28,7 +28,7 @@ var activity__handlers_8cpp =
       [ "REPEAT_CANCEL", "activity__handlers_8cpp.html#abf200789b850cb7dfcd2effbf86c21f0a0388b1673c5ee25140c1eb0ad44d9c27", null ]
     ] ],
     [ "blood_magic", "activity__handlers_8cpp.html#a95245f10366ae60a32238d6e72715559", null ],
-    [ "butcher_time_to_cut", "activity__handlers_8cpp.html#a88957d52cc36bf546b3adf39c89ed1e2", null ],
+    [ "butcher_time_to_cut", "activity__handlers_8cpp.html#a5f034aa3a39ac2575fe731c8f7288936", null ],
     [ "butchery_drops_harvest", "activity__handlers_8cpp.html#a836f07a3b48d23f905d98e55522cd159", null ],
     [ "butchery_quarter", "activity__handlers_8cpp.html#a4e6e57b53bdde2695d851c395797340a", null ],
     [ "check_butcher_cbm", "activity__handlers_8cpp.html#aebf29aca0034d003e106def6c29b78d7", null ],
@@ -67,7 +67,7 @@ var activity__handlers_8cpp =
     [ "get_position", "activity__handlers_8cpp.html#ad991118ba95531cae09dff23e30c5ef6", null ],
     [ "get_sorted_tiles_by_distance", "activity__handlers_8cpp.html#ad56bc2a183ef33fafef613435a366c27", null ],
     [ "magic_train", "activity__handlers_8cpp.html#a5b4804c11bb4b74c781ae87301708de5", null ],
-    [ "patch_activity_for_furniture", "activity__handlers_8cpp.html#a3797595d4215a8977cd3c5a39f063b4e", null ],
+    [ "patch_activity_for_furniture", "activity__handlers_8cpp.html#a3e3ae9542f50ef9949b9840ef4fce32c", null ],
     [ "patch_activity_for_vehicle_welder", "activity__handlers_8cpp.html#a5a06628fc3bbbfafb38b9b5b44e819d3", null ],
     [ "perform_zone_activity_turn", "activity__handlers_8cpp.html#a4a5f09aefe40013204d7f79f130c1117", null ],
     [ "repeat_menu", "activity__handlers_8cpp.html#a018b6dd27a5d929fd7e92352e1bb8566", null ],
