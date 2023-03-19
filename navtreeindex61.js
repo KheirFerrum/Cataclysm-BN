@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"classplot__options.html#a32d87e154b0ed67c5f39cc41c8976092a443b90b1f1c8c253910bf517b81dd6ed":[36,0,759,0,2],
+"classplot__options.html#a32d87e154b0ed67c5f39cc41c8976092aca4b24c35e8680d076253bbe0da01b27":[36,0,759,0,1],
 "classplot__options.html#a32d87e154b0ed67c5f39cc41c8976092aebe8cdf1852a7816def21f9f93716e59":[36,0,759,0,0],
 "classplot__options.html#a38ffd4e9bcf136818ade6fed569b9be6":[36,0,759,5],
 "classplot__options.html#a4c1c70ed016eb8f9325e718935d3e458":[36,0,759,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781":[36,0,786,3],
 "classrecipe__dictionary.html#ad5e10f23ae1e68737a623dcca14d56ef":[36,0,786,5],
 "classrecipe__dictionary.html#adf65ef185fb52b409b9d72c3537355a6":[36,0,786,1],
-"classrecipe__dictionary.html#ae8a411b40fc9a812a5bb6053b232a863":[36,0,786,13],
-"classrecipe__dictionary.html#aeb257c2c00a331d26c134065f0afcec6":[36,0,786,10],
-"classrecipe__subset.html":[36,0,787]
+"classrecipe__dictionary.html#ae8a411b40fc9a812a5bb6053b232a863":[36,0,786,13]
 };
